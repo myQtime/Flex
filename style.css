@@ -1,0 +1,260 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* start here */
+body{
+    font-family: PingFang TC,sans-serif;
+    }
+
+.wrap{
+    width: 940px;
+    margin: 0px auto;
+    background:white;
+}
+
+.nav{
+    height: 40px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-left{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+width: 220px;
+}
+
+.menu{
+    width: 250px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a{
+    display: block;
+    width: 32px;
+    height: 24px;
+    color: #3F5D45;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5;
+    padding:5px 15px;    
+}
+
+.menu a:hover{
+    color: white;
+    background: #3F5D45;
+}
+
+.banner{
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto;
+}
+
+.sidebar{
+    width: 300px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #3F5D45;
+}
+
+.sidebar li{
+    border: #EAF0ED 1px solid;
+    border-top: none;
+}
+
+.sidebar h2{
+background: #3F5D45;
+color: white;
+padding: 12px;
+}
+
+.sidebar a{
+    display: block;
+    text-decoration: none;
+    padding: 12px;
+    color: #3F5D45;
+}
+
+.sidebar a:hover{
+    background: #EAF0ED;
+}
+
+.sidebar .allPastry{
+    background: #EAF0ED;
+}
+
+.product-list{
+    width: 620px;
+}
+
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.pastry-wrap{
+    width: 300px;  
+    margin-bottom: 20px;
+}
+
+.pastry{
+    position: relative;
+}
+
+.pastry span{
+    display: block;
+    background: #3F5D45;
+    color: white;
+    font-size: 16px;
+    width: 36px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    left:20px
+}
+
+.pastry a{
+    position: absolute;
+    top: 16px;
+    right: 20px;
+}
+
+.info{
+    display: flex;
+    text-align: center;
+    height: 56px;
+    font-size: 20px;
+}
+
+.info h3{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 172px;
+    border-left: 1px solid #EAF0ED;
+    color: #3F5D45;
+}
+
+.price{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    color: #3F5D45;
+    border-left: 1px solid #EAF0ED;
+    border-right: 1px solid #EAF0ED;
+}
+
+.addItem{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    color: #3F5D45;
+    background: #EAF0ED;
+    padding: 20px;
+}
+
+.addItem:hover{
+    color: #EAF0ED;
+    background: #3F5D45;
+}
+
+.page{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.page li{
+    border-right: 1px solid #EAF0ED;
+}
+.page a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    color: #3F5D45;
+    text-decoration: none;
+    border-right: none;
+    border: 1px solid #EAF0ED;
+    border-right: none;
+    box-sizing: border-box;
+}
+
+.page a:hover{
+    background: #EAF0ED;
+}
+
+.page .active,.page .active:hover{
+    background: #3F5D45;
+    color: white;
+    }
+

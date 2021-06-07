@@ -176,6 +176,10 @@ padding: 12px;
     left:20px
 }
 
+.pastry img{
+    display: block;
+}
+
 .pastry a{
     position: absolute;
     top: 16px;
